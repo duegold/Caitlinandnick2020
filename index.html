@@ -1,0 +1,292 @@
+<html>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Barlow+Condensed|Taviraj" rel="stylesheet"> 
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+<style>
+
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	font-family: 'Taviraj', sans-serif;
+  color: white;
+  }
+
+html, body {
+  height: 100%;
+  background: #0c4b59;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #222;
+  margin-bottom: .3em;
+}
+
+p {
+  font-weight: 200;
+  color: #525252;
+}
+
+.fl {
+  float: left;
+  margin: 20px;
+}
+
+.fr {
+  float: right;
+  margin: 20px;
+}
+
+.hero {
+  width: 45%;
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 0%), url(https://i.ibb.co/Sm97sCd/Caitlin-and-Nick.jpg);
+  background-size: cover;
+  background-position: center 30%;
+}
+
+
+.content {
+  width: 52%;
+  min-height: 100%;
+  margin-left: 45%;
+  padding: 4em 1.5em;
+  overflow: hidden;
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 18px;
+  }
+
+  .hero {
+    height: 400px;
+    width: 100%;
+    display: block;
+    position: relative;
+    padding: 1px;
+  }
+  .hero nav {
+    font-size: 1.7em;
+  }
+
+  .content {
+    margin-left: 0;
+    padding-top: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  img.fl, img.fr {
+    float: none;
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .morespace{
+  margin-top: 70px;
+  }
+}
+
+
+.subheadingspacing {
+	margin-top: 25px;
+}
+
+.moreinfospacing {
+	margin-top: 60px;
+}
+
+
+.mainheading {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.heading {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.subheading {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.blurb {
+	font-size: 20px;
+}
+
+.text {
+	font-size: 18px;
+}
+
+td {
+	font-size: 18px;
+
+}
+
+.intro {
+	font-size: 34px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.leaves {
+  width: 52%;
+  min-height: 100%;
+  margin-left: 25%;
+ }
+
+.outer-div
+{
+         padding: 30px;
+     text-align: center;
+}
+.inner-div
+{
+     display: inline-block;
+     padding: 50px;
+}
+
+.iAmButton
+{
+	width: 130px;
+	   border: 1px outset black;
+   background-color: lightgray;
+}
+
+.tableHere
+{
+	font-size: 15px;
+}
+
+</style>
+
+
+	<div id="nowUnlocked" class="outer-div">
+		<div class="inner-div">
+		<div class="mainheading">You are invited to Caitlin and Nick's Wedding!</div>
+		<br>
+		<div class="subheading" id="forJemma">Please enter your invitation code here:</div>
+			<br>
+			<input class = "center" id="codeText"></input>
+			<button class="iAmButton" id="theButton" onclick="getCodeText()">Submit</button>
+
+		</div>
+	</div>
+
+
+<div id="unlock">
+ <script>
+  var x = document.getElementById("unlock");
+  var z = document.getElementById("nowUnlocked");
+  x.style.display = "none";
+  z.style.display = "block";
+
+ 
+</script> 
+  <div class="hero">
+  </div>
+
+<section class="content">
+
+<img class="leaves morespace" src="https://i.ibb.co/HXJN8DV/Native-Top.jpg">
+
+<div class="intro">Caitlin</div>
+<div class="intro">&</div>
+<div class="intro">Nick</div>
+
+<img class="leaves" src="https://i.ibb.co/hFkwbvQ/Native-Bottom.jpg">
+
+  <div class="mainheading">We&#39re getting married!</div>
+
+
+<div class="blurb">Yay!</div>
+ 
+<div class="subheadingspacing">
+	<span class="subheading">Where?</span><br>
+	<span class="text">Rupert on Rupert</span>
+</div>
+
+<div class="subheadingspacing">
+	<span class="subheading" >When?</span><br>
+	<span class="text">Monday 28th December, 2020</span><br>
+	<span class="text">Evening</span>
+</div>
+
+<div class="heading moreinfospacing">More Info</div>
+ 
+ 
+<div class="subheadingspacing">
+	<span class="subheading">Extra info about the ceremony</span><br>
+	<span class="text">Canapes!</span><br>
+	<span class="text">Drinks, dancing and good times to follow.</span>
+</div>
+
+<div class="subheadingspacing">
+	<span class="subheading">What should I wear?</span><br>
+	<span class="text">Swanky pants.</span><br>
+</div>
+
+<div class="subheadingspacing">
+	<span class="subheading">Is there a gifts registry?</span><br>
+	<span class="text">No need for gifts, we just want to celebrate with all our favourite people!</span><br>
+	<span class="text">If you were thinking of giving a gift, may we respectfully request a gift of money to put towards our new home&#8230 but really, there is absolutely no need for a gift.</span>
+</div>
+
+
+<div class="subheadingspacing">
+	<span class="subheading">Is the wedding indoors or outdoors?</span><br>
+	<span class="text">Indoors</span>
+</div>
+
+<div class="subheadingspacing">
+	<span class="subheading">What kind of food will we be having?</span><br>
+	<span class="text">Canapes!</span><br>
+</div>
+
+
+
+</section>
+</div>
+<script>
+ var input = document.getElementById("codeText");
+input.addEventListener("keyup", function(event) {
+event.preventDefault();
+if (event.keyCode === 13) {
+	document.getElementById("theButton").click();
+}
+});
+
+
+  function getCodeText() {
+  var y = document.getElementById("codeText").value;
+  if (
+	(y == "Caitlinandnick2020")||
+	(y == "caitlinandnick2020"))
+
+	  {
+	x.style.display = "block";
+	z.style.display = "none";
+	
+	}
+	else {
+	document.getElementById("forJemma").innerHTML = "Try again: ";
+	}
+  }
+  
+</script>
+</html>
